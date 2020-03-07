@@ -11,8 +11,10 @@ export default class LoginPage extends Component {
         return (
             <div>
                 <form>
-                    <input />
-                    <input />
+                    <label>Username</label>
+                    <input value={this.state.usesrname} name="Username"/>
+                    <label>Password</label>
+                    <input value={this.state.password} name="Password"/>
                     <input type='submit' value="Login" />
                 </form>
             </div>
