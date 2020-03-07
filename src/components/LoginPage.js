@@ -10,7 +10,11 @@ export default class LoginPage extends Component {
         console.log(this.state)
         return (
             <div>
-                I'm the Login Page
+                <form>
+                    <input />
+                    <input />
+                    <input type='submit' value="Login" />
+                </form>
             </div>
         )
     }
