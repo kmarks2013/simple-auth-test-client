@@ -1,6 +1,10 @@
 import React, { Component } from 'react'
 
 export default class SignupPage extends Component {
+    state = {
+        username: "",
+        password: ""
+    }
 
     render() {
         return (
