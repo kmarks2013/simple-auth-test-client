@@ -39,7 +39,7 @@ class LoginPage extends Component {
                     <input value={this.state.username} name="username" onChange={this.handleChange}/>
                     <label>Password</label>
                     <input type="password" value={this.state.password} name="password" onChange={this.handleChange}/>
-                    <input type='submit' value="ogin" />
+                    <input type='submit' value="login" />
                 </form>
             </div>
         )

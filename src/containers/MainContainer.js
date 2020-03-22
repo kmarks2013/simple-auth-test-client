@@ -25,7 +25,7 @@ export default class MainContainer extends Component {
             case 'login':
                 return <LoginPage redirect={this.redirect} />
             case 'home':
-                return <HomePage />
+                return <HomePage redirect={this.redirect}/>
         }
     }
 }
