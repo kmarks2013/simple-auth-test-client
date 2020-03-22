@@ -34,6 +34,7 @@ class LoginPage extends Component {
         console.log(this.state)
         return (
             <div>
+                <h1>Login</h1>
                 <form onSubmit={this.handleSubmit}>
                     <label>Username</label>
                     <input value={this.state.username} name="username" onChange={this.handleChange}/>
@@ -41,6 +42,8 @@ class LoginPage extends Component {
                     <input type="password" value={this.state.password} name="password" onChange={this.handleChange}/>
                     <input type='submit' value="login" />
                 </form>
+                <label>Don't have an Account?</label>
+                <button onClick={() => this.props.redirect('signup')}>Click to Sign-Up</button>
             </div>
         )
     }
