@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import LoginPage from '../components/LoginPage'
 import HomePage from '../components/HomePage'
+import SignupPage from '../components/SignupPage'
 
 export default class MainContainer extends Component {
     state = {
@@ -26,6 +27,8 @@ export default class MainContainer extends Component {
                 return <LoginPage redirect={this.redirect} />
             case 'home':
                 return <HomePage redirect={this.redirect}/>
+            case 'signup':
+                return <SignupPage redirect={this.redirect}/>
         }
     }
 }
