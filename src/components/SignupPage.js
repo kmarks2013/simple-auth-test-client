@@ -6,6 +6,17 @@ export default class SignupPage extends Component {
         password: ""
     }
 
+    handleChange =(e) => {
+        this.setState({  
+            [e.target.name]: e.target.value
+        })
+    }
+
+    handleSubmit = (e) => {
+        e.preventDefault()
+        console.log('signup submitted', this.state)
+    }
+
     render() {
         return (
             <div>
