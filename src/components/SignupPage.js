@@ -21,11 +21,11 @@ export default class SignupPage extends Component {
         return (
             <div>
                 <h1>Sign Up</h1>
-                <form>
+                <form onSubmit={this.handleSubmit}> 
                     <label>Username</label>
-                    <input type="text" name="username" value={this.state.username} ></input>
+                    <input type="text" name="username" value={this.state.username} onChange={this.handleChange} ></input>
                     <label>Password</label>
-                    <input type="password" name="password" value={this.state.password}></input>
+                    <input type="password" name="password" value={this.state.password} onChange={this.handleChange}></input>
                     <input type="submit" value="Sing Up"></input>
                 </form>
                 <label>Have an Account?</label>
